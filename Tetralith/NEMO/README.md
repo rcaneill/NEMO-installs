@@ -6,7 +6,7 @@
 
 ## Arch files
 
-1. Copy the arch files from _NEMO/arch/*_for Tetralith into the arch/ folder
+1. Copy the arch files from *NEMO/arch/**for Tetralith into the arch/ folder
    (git clone this repository and
    then copy or use wget to just downlod the arch files).
 2. Replace the libraries lines according to your system in

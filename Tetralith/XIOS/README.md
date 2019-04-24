@@ -9,7 +9,7 @@ building environment.
 
 ## Arch files
 
-1. Copy the arch files from _XIOS/arch/*_ for Tetralith into the arch/ folder
+1. Copy the arch files from **XIOS/arch/** for Tetralith into the arch/ folder
    (git clone this repository and
    then copy or use wget to just download the arch files).
 2. Replace the librairies lines according to your system in
