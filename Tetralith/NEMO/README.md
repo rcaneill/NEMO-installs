@@ -8,7 +8,7 @@
 
 1. Copy the arch files from *NEMO/arch/* for Tetralith into the arch/ folder
    (git clone this repository and
-   then copy or use wget to just downlod the arch files).
+   then copy or use wget to just download the arch files).
 2. Replace the libraries lines according to your system in
    *arch-X64_TETRALITH.fcm*
 
