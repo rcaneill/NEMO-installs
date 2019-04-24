@@ -1,0 +1,25 @@
+################################################################################
+###################                Projet XIOS               ###################
+################################################################################
+
+%CCOMPILER      mpiicc
+%FCOMPILER      mpiifort 
+%LINKER         mpiifort  -nofor-main
+
+%BASE_CFLAGS    -diag-disable 1125 -diag-disable 279 -D_GLIBCXX_USE_CXX11_ABI=0
+%PROD_CFLAGS    -O3 -D BOOST_DISABLE_ASSERTS
+%DEV_CFLAGS     -g -traceback
+%DEBUG_CFLAGS   -DBZ_DEBUG -g -traceback -fno-inline
+
+%BASE_FFLAGS    -D__NONE__ 
+%PROD_FFLAGS    -O3
+%DEV_FFLAGS     -g -O2 -traceback
+%DEBUG_FFLAGS   -g -traceback
+
+%BASE_INC       -D__NONE__
+%BASE_LD        -lstdc++ #-Wl,-rpath=/smplocal/pub/NetCDF/4.1.3/mpi/lib:/smplocal/pub/HDF5/1.8.9/par/lib
+
+
+%CPP            mpiicc -EP
+%FPP            cpp -P
+%MAKE           gmake
