@@ -31,7 +31,7 @@ Please check that you have the following packages installed
 /!\ *You need to execute the script config_vars.sh like presented,
 to get the exported variables accessible:*
 
-    $. ./config_var.sh
+    $ . ./config_var.sh
     $ ./install_zlib.sh	
     $ ./install_hdf5.sh
     $ ./install netCDF-c.sh
