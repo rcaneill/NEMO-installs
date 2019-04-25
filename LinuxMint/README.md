@@ -41,5 +41,5 @@ to get the exported variables accessible:*
 # Note
 
 A part of these scripts have been inspired from a doc made by
-Fatemeh Chegini, and Jean-Philippe Paquin fro NEMO 3.6:
+Fatemeh Chegini, and Jean-Philippe Paquin for NEMO 3.6:
 [https://nemo-eastcoast.readthedocs.io/en/latest/nemo-code/nemo3.6/scripts/](https://nemo-eastcoast.readthedocs.io/en/latest/nemo-code/nemo3.6/scripts/)
