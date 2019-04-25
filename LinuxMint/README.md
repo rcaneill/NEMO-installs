@@ -1,3 +1,9 @@
+These scripts are designed for an installation on a Linux Mint computer, using the *GCC* compilers.
+They can be adapted for other environment (Mac OS, other GNU/Linux distributions, etc).
+There is no way to execute all of the scripts at once, this is on purpose: usually
+everything will not work well at the first try for every library, so it is
+safer to compile them one by one.
+
 # Installation of librairies needed by NEMO
 Will create a folder in the home directory: /home/$USER/NEMO_UTILS/
 
@@ -30,3 +36,10 @@ to get the exported variables accessible:*
 4. install netCDF-c.sh
 5. install_netCDF-fortran.sh
 6. install_xios.sh
+
+# Note
+
+A part of these scripts have been inspired from a doc made by
+Fatemeh Chegini, and Jean-Philippe Paquin fro NEMO 3.6:
+[https://nemo-eastcoast.readthedocs.io/en/latest/nemo-code/nemo3.6/scripts/]
+(https://nemo-eastcoast.readthedocs.io/en/latest/nemo-code/nemo3.6/scripts/)
