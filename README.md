@@ -2,6 +2,6 @@
 
 Here are my configuration files for the compilation of XIOS and NEMO,
 both for my personal computer (Linux Mint, compiler GCC) and for
-a supercomputer (Tetralith, intel comnpilers).
+a supercomputer (Tetralith, intel compilers).
 
 For Linux Mint, scripts are available to install all the needed libraries.
