@@ -22,7 +22,7 @@ Please check that you have the following packages installed
 - svn (package subversion on ubuntu)
 - ...
 
-# dev librairies
+## dev librairies
 - libcurl4-openssl-dev
 - ...
 
