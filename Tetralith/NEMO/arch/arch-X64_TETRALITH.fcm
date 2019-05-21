@@ -45,7 +45,7 @@
 
 %CPP	             cpp
 %FC                  mpiifort -c -cpp
-%FCFLAGS             -i4 -r8 -O3 -fp-model precise -fno-alias
+%FCFLAGS             -i8 -r8 -O3 -fp-model precise -fno-alias
 %FFLAGS              %FCFLAGS
 %LD                  mpiifort
 %LDFLAGS             -lstdc++
