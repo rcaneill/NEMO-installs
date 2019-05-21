@@ -45,7 +45,7 @@
 
 %CPP	             cpp -Dkey_nosignedzero
 %FC                  mpif90 -c -cpp
-%FCFLAGS             -O3 -fdefault-integer-8 -fdefault-real-8 -ffree-line-length-none -fno-second-underscore -Dgfortran -funroll-all-loops -fcray-pointer
+%FCFLAGS             -O3 -fdefault-real-8 -ffree-line-length-none -fno-second-underscore -Dgfortran -funroll-all-loops -fcray-pointer
 %FFLAGS              %FCFLAGS
 %LD                  mpif90
 %LDFLAGS             -Wl,-rpath,$INSTDIR/lib
