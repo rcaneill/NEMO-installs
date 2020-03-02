@@ -4,6 +4,9 @@ There is no way to execute all of the scripts at once, this is on purpose: usual
 everything will not work well at the first try for every library, so it is
 safer to compile them one by one.
 
+The script have been tested and successful on:
+- Linux Mint 19 Tara
+
 # Installation of libraries needed by NEMO
 Will create a folder in the home directory: /home/$USER/NEMO_UTILS/
 
