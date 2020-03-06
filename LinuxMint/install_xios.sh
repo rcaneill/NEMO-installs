@@ -14,10 +14,10 @@ if [ ! -d "xios-2.5" ]; then
 fi
 
 cd xios-2.5
+
+#copying the file for variables and lib positions
 cp $SCRIPTPATH/arch_xios/arch-GCC_LINUX_local.env arch/arch-GCC_LINUX_$HOSTNAME.env
 cp $SCRIPTPATH/arch_xios/arch-GCC_LINUX_local.path arch/arch-GCC_LINUX_$HOSTNAME.path
 cp $SCRIPTPATH/arch_xios/arch-GCC_LINUX_local.fcm arch/arch-GCC_LINUX_$HOSTNAME.fcm
 
-#copying the file for variables and lib positions
-
-./make_xios --arch GCC_LINUX_$HOSTNAME 2>&1 | tee hansolo-make.log
+./make_xios --arch GCC_LINUX_$HOSTNAME 2>&1 | tee ${HOSTNAME}-make.log

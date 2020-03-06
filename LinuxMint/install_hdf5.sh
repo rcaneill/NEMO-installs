@@ -10,9 +10,17 @@ SCRIPTPATH=`dirname $SCRIPT`
 cd $WORKDIR
 mkdir -p HDF5
 cd HDF5
-wget http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.10.4.tar.gz
-tar xvzf hdf5-1.10.4.tar.gz
-cd hdf5-1.10.4
+
+LIB_VERSION="hdf5-1.10.5"
+LIB_FILE="${LIB_VERSION}.tar.gz"
+
+# If not downloaded, download hdf5
+if [ ! -f $LIB_FILE ]; then
+    wget http://www.hdfgroup.org/ftp/HDF5/current/src/${LIB_FILE}
+fi
+tar xvfz $LIB_FILE
+
+cd $LIB_VERSION
 
 export HDF5_Make_Ignore=yes
 
@@ -21,10 +29,10 @@ export HDF5_Make_Ignore=yes
 ./configure --prefix=$INSTDIR \
 	    --enable-fortran  --enable-parallel --enable-hl --enable-shared  \
 	    --with-zlib=$INSTDIR \
-	    2>&1 | tee hansolo-configure_hdf5_zlib.log
+	    2>&1 | tee ${HOSTNAME}-configure_hdf5_zlib.log
 
 # Make and install
 
-make 2>&1 | tee hamsolo-make_hdf5_zlib.log
-make check  2>&1 | tee hansolo-make_check_hdf5_zlib.log
-sudo make install 2>&1 | tee hansolo-install_hdf5_zlib.log
+make 2>&1 | tee ${HOSTNAME}-make_hdf5_zlib.log
+make check  2>&1 | tee ${HOSTNAME}-make_check_hdf5_zlib.log
+make install 2>&1 | tee ${HOSTNAME}-install_hdf5_zlib.log

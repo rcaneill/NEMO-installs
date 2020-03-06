@@ -10,19 +10,27 @@ SCRIPTPATH=`dirname $SCRIPT`
 cd $WORKDIR
 mkdir -p NetCDF-c
 cd NetCDF-c
-wget https://github.com/Unidata/netcdf-c/archive/v4.6.2.tar.gz
-tar xvzf v4.6.2.tar.gz
-cd netcdf-c-4.6.2
+
+LIB_VERSION="4.7.3"
+LIB_FILE="v${LIB_VERSION}.tar.gz"
+
+# If not downloaded, download zlib
+if [ ! -f $LIB_FILE ]; then
+    wget https://github.com/Unidata/netcdf-c/archive/${LIB_FILE}
+fi
+tar xvfz $LIB_FILE
+
+cd netcdf-c-${LIB_VERSION}
 
 export CPPFLAGS="-I$INSTDIR/include -DpgiFortran"
-export LDFLAGS="-L$INSTDIR/lib -lhdf5_hl -lhdf5"
+export LDFLAGS="-Wl,-rpath,$INSTDIR/lib -L$INSTDIR/lib -lhdf5_hl -lhdf5"
 export LIBS="-lmpi"
 
 ./configure --prefix=$INSTDIR --enable-netcdf-4 --enable-shared \
-	    --enable-parallel --enable-parallel-tests \
-	    2>&1 | tee hansolo-configure.log
+	    --enable-parallel-tests \
+	    2>&1 | tee ${HOSTNAME}-configure.log
 
-make 2>&1 | tee hansolo-make.log
-make check 2>&1 | tee hansolo-check.log
-sudo make install 2>&1 | tee hansolo-install.log
+make 2>&1 | tee ${HOSTNAME}-make.log
+make check 2>&1 | tee ${HOSTNAME}-check.log
+make install 2>&1 | tee ${HOSTNAME}-install.log
 

@@ -17,7 +17,9 @@ Please check that you have the following packages installed
 (non-exhaustive list).
 
 ## compiler
-- openmpi-bin
+- mpicc
+- mpif90
+- openmpi-bin, libmpich-dev, libopenmpi-dev
 - lam4-dev
 - gcc
 - g++
@@ -31,15 +33,14 @@ Please check that you have the following packages installed
 
 # Order of execution of the scripts
 
-/!\ *You need to execute the script config_vars.sh like presented,
-to get the exported variables accessible:*
 
-    $ . ./config_var.sh
     $ ./install_zlib.sh	
     $ ./install_hdf5.sh
     $ ./install netCDF-c.sh
     $ ./install_netCDF-fortran.sh
     $ ./install_xios.sh
+
+You can then inspire from the `install_nemo.sh` script to download and compile a NEMO configuration.
 
 # Note
 

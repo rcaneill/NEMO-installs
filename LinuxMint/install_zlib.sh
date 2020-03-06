@@ -19,7 +19,8 @@ fi
 tar xvfz $LIB_FILE
 
 cd $LIB_VERSION
+
 ./configure --prefix=$INSTDIR 2>&1 | tee ${HOSTNAME}-configure_zlib.log
 make 2>&1 | tee ${HOSTNAME}-make.log
 make check 2>&1 | tee ${HOSTNAME}-make_check.log
-sudo make install 2>&1 | tee ${HOSTNAME}-install.log
+make install 2>&1 | tee ${HOSTNAME}-install.log

@@ -10,16 +10,12 @@ cd NEMO
 
 # If not downloaded, download NEMO
 if [ ! -d "NEMOGCM" ]; then
-  svn co https://forge.ipsl.jussieu.fr/nemo/svn/NEMO/releases/release-4.0 NEMOGCM
+  svn co https://forge.ipsl.jussieu.fr/nemo/svn/NEMO/releases/release-4.0.2 NEMOGCM
 fi
 
 cd NEMOGCM
-# For the doc, we need to use the pdfcreator from the trunk
-cd doc
-svn co https://forge.ipsl.jussieu.fr/nemo/svn/NEMO/trunk/doc/PDF_creation.sh PDF_creation.sh
-cd ..
 
-cp $SCRIPTPATH/arch_nemo/arch-local.fcm arch/arch-local_$HOSTNAME.fcm
+sed -e "s:\$INSTDIR:${INSTDIR}:" -e "s:\$WORKDIR:${WORKDIR}:" $SCRIPTPATH/arch_nemo/arch-local.fcm > arch/arch-local_$HOSTNAME.fcm
 #copying the file for variables and lib positions
 
 ARCHI=\'local_$HOSTNAME\'
