@@ -1,0 +1,164 @@
+make  all-recursive
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+Making all in fortran
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+/usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o module_netcdf_nc_data.o module_netcdf_nc_data.F90
+/usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf_nc_interfaces.o  module_netcdf_nc_interfaces.f90
+/usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o module_netcdf_nf_data.o module_netcdf_nf_data.F90
+/usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o module_netcdf_nf_interfaces.o module_netcdf_nf_interfaces.F90
+/usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf_f03.o  module_netcdf_f03.f90
+/usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf_fortv2_c_interfaces.o  module_netcdf_fortv2_c_interfaces.f90
+/usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf4_nc_interfaces.o  module_netcdf4_nc_interfaces.f90
+/usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o module_netcdf4_nf_interfaces.o module_netcdf4_nf_interfaces.F90
+/usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf4_f03.o  module_netcdf4_f03.f90
+/usr/bin/mpif90  -O3 -fPIC -c -o typeSizes.o  typeSizes.f90
+/usr/bin/mpif90  -O3 -fPIC -c -o netcdf4.o  netcdf4.f90
+echo '!     NetCDF-3.' > netcdf.inc
+cat ../fortran/netcdf3.inc >> netcdf.inc
+echo >> netcdf.inc
+echo '!     NetCDF-4.' >> netcdf.inc
+cat ../fortran/netcdf4.inc >> netcdf.inc
+echo >> netcdf.inc
+echo '!     NetCDF-2.' >> netcdf.inc
+cat ../fortran/netcdf2.inc >> netcdf.inc
+echo >> netcdf.inc
+echo '!     This is to turn on netCDF internal logging.' >> netcdf.inc
+echo '      integer nf_set_log_level' >> netcdf.inc
+echo '      external nf_set_log_level' >> netcdf.inc
+make  all-am
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o typeSizes.lo  typeSizes.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c typeSizes.f90  -fPIC -o .libs/typeSizes.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c typeSizes.f90 -o typeSizes.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o module_netcdf_nc_data.lo module_netcdf_nc_data.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c module_netcdf_nc_data.F90  -fPIC -o .libs/module_netcdf_nc_data.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c module_netcdf_nc_data.F90 -o module_netcdf_nc_data.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf_nc_interfaces.lo  module_netcdf_nc_interfaces.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf_nc_interfaces.f90  -fPIC -o .libs/module_netcdf_nc_interfaces.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf_nc_interfaces.f90 -o module_netcdf_nc_interfaces.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o module_netcdf_nf_data.lo module_netcdf_nf_data.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c module_netcdf_nf_data.F90  -fPIC -o .libs/module_netcdf_nf_data.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c module_netcdf_nf_data.F90 -o module_netcdf_nf_data.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o module_netcdf_nf_interfaces.lo module_netcdf_nf_interfaces.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c module_netcdf_nf_interfaces.F90  -fPIC -o .libs/module_netcdf_nf_interfaces.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c module_netcdf_nf_interfaces.F90 -o module_netcdf_nf_interfaces.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf_f03.lo  module_netcdf_f03.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf_f03.f90  -fPIC -o .libs/module_netcdf_f03.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf_f03.f90 -o module_netcdf_f03.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o nf_attio.lo nf_attio.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_attio.F90  -fPIC -o .libs/nf_attio.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_attio.F90 -o nf_attio.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o nf_control.lo nf_control.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_control.F90  -fPIC -o .libs/nf_control.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_control.F90 -o nf_control.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o nf_dim.lo  nf_dim.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_dim.f90  -fPIC -o .libs/nf_dim.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_dim.f90 -o nf_dim.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o nf_misc.lo  nf_misc.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_misc.f90  -fPIC -o .libs/nf_misc.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_misc.f90 -o nf_misc.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o nf_genatt.lo  nf_genatt.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_genatt.f90  -fPIC -o .libs/nf_genatt.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_genatt.f90 -o nf_genatt.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o nf_geninq.lo  nf_geninq.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_geninq.f90  -fPIC -o .libs/nf_geninq.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_geninq.f90 -o nf_geninq.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o nf_genvar.lo  nf_genvar.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_genvar.f90  -fPIC -o .libs/nf_genvar.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_genvar.f90 -o nf_genvar.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o nf_vario.lo nf_vario.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_vario.F90  -fPIC -o .libs/nf_vario.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_vario.F90 -o nf_vario.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o nf_var1io.lo nf_var1io.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_var1io.F90  -fPIC -o .libs/nf_var1io.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_var1io.F90 -o nf_var1io.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o nf_varaio.lo nf_varaio.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_varaio.F90  -fPIC -o .libs/nf_varaio.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_varaio.F90 -o nf_varaio.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o nf_varmio.lo nf_varmio.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_varmio.F90  -fPIC -o .libs/nf_varmio.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_varmio.F90 -o nf_varmio.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o nf_varsio.lo nf_varsio.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_varsio.F90  -fPIC -o .libs/nf_varsio.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_varsio.F90 -o nf_varsio.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf4_nc_interfaces.lo  module_netcdf4_nc_interfaces.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf4_nc_interfaces.f90  -fPIC -o .libs/module_netcdf4_nc_interfaces.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf4_nc_interfaces.f90 -o module_netcdf4_nc_interfaces.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o module_netcdf4_nf_interfaces.lo module_netcdf4_nf_interfaces.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c module_netcdf4_nf_interfaces.F90  -fPIC -o .libs/module_netcdf4_nf_interfaces.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c module_netcdf4_nf_interfaces.F90 -o module_netcdf4_nf_interfaces.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf4_f03.lo  module_netcdf4_f03.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf4_f03.f90  -fPIC -o .libs/module_netcdf4_f03.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf4_f03.f90 -o module_netcdf4_f03.o >/dev/null 2>&1
+depbase=`echo nf_lib.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../libtool  --tag=CC   --mode=compile /usr/bin/mpicc -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -DLONGLONG_IS_LONG -MT nf_lib.lo -MD -MP -MF $depbase.Tpo -c -o nf_lib.lo nf_lib.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/mpicc -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -DLONGLONG_IS_LONG -MT nf_lib.lo -MD -MP -MF .deps/nf_lib.Tpo -c nf_lib.c  -fPIC -DPIC -o .libs/nf_lib.o
+libtool: compile:  /usr/bin/mpicc -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -DLONGLONG_IS_LONG -MT nf_lib.lo -MD -MP -MF .deps/nf_lib.Tpo -c nf_lib.c -o nf_lib.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o nf_nc4.lo  nf_nc4.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_nc4.f90  -fPIC -o .libs/nf_nc4.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_nc4.f90 -o nf_nc4.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -c -o nf_logging.lo nf_logging.F90
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_logging.F90  -fPIC -o .libs/nf_logging.o
+libtool: compile:  /usr/bin/mpif90 -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -c nf_logging.F90 -o nf_logging.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o netcdf4.lo  netcdf4.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c netcdf4.f90  -fPIC -o .libs/netcdf4.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c netcdf4.f90 -o netcdf4.o >/dev/null 2>&1
+depbase=`echo nf_v2compat.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../libtool  --tag=CC   --mode=compile /usr/bin/mpicc -DHAVE_CONFIG_H -I. -I.. -I../libsrc   -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -DLONGLONG_IS_LONG -MT nf_v2compat.lo -MD -MP -MF $depbase.Tpo -c -o nf_v2compat.lo nf_v2compat.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/mpicc -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -DLONGLONG_IS_LONG -MT nf_v2compat.lo -MD -MP -MF .deps/nf_v2compat.Tpo -c nf_v2compat.c  -fPIC -DPIC -o .libs/nf_v2compat.o
+libtool: compile:  /usr/bin/mpicc -DHAVE_CONFIG_H -I. -I.. -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran -O3 -fPIC -DLONGLONG_IS_LONG -MT nf_v2compat.lo -MD -MP -MF .deps/nf_v2compat.Tpo -c nf_v2compat.c -o nf_v2compat.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o module_netcdf_fortv2_c_interfaces.lo  module_netcdf_fortv2_c_interfaces.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf_fortv2_c_interfaces.f90  -fPIC -o .libs/module_netcdf_fortv2_c_interfaces.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c module_netcdf_fortv2_c_interfaces.f90 -o module_netcdf_fortv2_c_interfaces.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=compile /usr/bin/mpif90  -O3 -fPIC -c -o nf_fortv2.lo  nf_fortv2.f90
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_fortv2.f90  -fPIC -o .libs/nf_fortv2.o
+libtool: compile:  /usr/bin/mpif90 -O3 -fPIC -c nf_fortv2.f90 -o nf_fortv2.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=FC   --mode=link /usr/bin/mpif90  -O3 -fPIC  -version-number 6:1:1 -L/home/romain/NEMO_UTILS/installs/lib -lnetcdf -lhdf5_hl -lhdf5 -lz -lcurl -o libnetcdff.la -rpath /home/romain/NEMO_UTILS/installs/lib typeSizes.lo module_netcdf_nc_data.lo module_netcdf_nc_interfaces.lo module_netcdf_nf_data.lo module_netcdf_nf_interfaces.lo module_netcdf_f03.lo nf_attio.lo nf_control.lo nf_dim.lo nf_misc.lo nf_genatt.lo nf_geninq.lo nf_genvar.lo nf_vario.lo nf_var1io.lo nf_varaio.lo nf_varmio.lo nf_varsio.lo module_netcdf4_nc_interfaces.lo module_netcdf4_nf_interfaces.lo module_netcdf4_f03.lo nf_lib.lo nf_nc4.lo nf_logging.lo netcdf4.lo  nf_v2compat.lo module_netcdf_fortv2_c_interfaces.lo nf_fortv2.lo  -lnetcdf -lhdf5_hl -lhdf5 -ldl -lz -lcurl -lm -lmpi
+libtool: link: /usr/bin/mpif90 -shared  -fPIC  .libs/typeSizes.o .libs/module_netcdf_nc_data.o .libs/module_netcdf_nc_interfaces.o .libs/module_netcdf_nf_data.o .libs/module_netcdf_nf_interfaces.o .libs/module_netcdf_f03.o .libs/nf_attio.o .libs/nf_control.o .libs/nf_dim.o .libs/nf_misc.o .libs/nf_genatt.o .libs/nf_geninq.o .libs/nf_genvar.o .libs/nf_vario.o .libs/nf_var1io.o .libs/nf_varaio.o .libs/nf_varmio.o .libs/nf_varsio.o .libs/module_netcdf4_nc_interfaces.o .libs/module_netcdf4_nf_interfaces.o .libs/module_netcdf4_f03.o .libs/nf_lib.o .libs/nf_nc4.o .libs/nf_logging.o .libs/netcdf4.o .libs/nf_v2compat.o .libs/module_netcdf_fortv2_c_interfaces.o .libs/nf_fortv2.o   -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libnetcdf.so -L/usr/lib/x86_64-linux-gnu /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lm -lmpi  -O3   -pthread -Wl,-soname -Wl,libnetcdff.so.6 -o .libs/libnetcdff.so.6.1.1
+libtool: link: (cd ".libs" && rm -f "libnetcdff.so.6" && ln -s "libnetcdff.so.6.1.1" "libnetcdff.so.6")
+libtool: link: (cd ".libs" && rm -f "libnetcdff.so" && ln -s "libnetcdff.so.6.1.1" "libnetcdff.so")
+libtool: link: ar cru .libs/libnetcdff.a  typeSizes.o module_netcdf_nc_data.o module_netcdf_nc_interfaces.o module_netcdf_nf_data.o module_netcdf_nf_interfaces.o module_netcdf_f03.o nf_attio.o nf_control.o nf_dim.o nf_misc.o nf_genatt.o nf_geninq.o nf_genvar.o nf_vario.o nf_var1io.o nf_varaio.o nf_varmio.o nf_varsio.o module_netcdf4_nc_interfaces.o module_netcdf4_nf_interfaces.o module_netcdf4_f03.o nf_lib.o nf_nc4.o nf_logging.o netcdf4.o nf_v2compat.o module_netcdf_fortv2_c_interfaces.o nf_fortv2.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libnetcdff.a
+libtool: link: ( cd ".libs" && rm -f "libnetcdff.la" && ln -s "../libnetcdff.la" "libnetcdff.la" )
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+Making all in .
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+Making all in nf_test
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf_test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf_test'
+Making all in nf03_test
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf03_test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf03_test'
+Making all in docs
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/docs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/docs'
+Making all in examples
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+Making all in F77
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F77'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F77'
+Making all in F90
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make  all-am
+make[4]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+Making all in CMakeExtras
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/CMakeExtras'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/CMakeExtras'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'

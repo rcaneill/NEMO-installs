@@ -1,0 +1,137 @@
+Making install in fortran
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+make  install-am
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+ /bin/mkdir -p '/home/romain/NEMO_UTILS/installs/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libnetcdff.la '/home/romain/NEMO_UTILS/installs/lib'
+libtool: install: /usr/bin/install -c .libs/libnetcdff.so.6.1.1 /home/romain/NEMO_UTILS/installs/lib/libnetcdff.so.6.1.1
+libtool: install: (cd /home/romain/NEMO_UTILS/installs/lib && { ln -s -f libnetcdff.so.6.1.1 libnetcdff.so.6 || { rm -f libnetcdff.so.6 && ln -s libnetcdff.so.6.1.1 libnetcdff.so.6; }; })
+libtool: install: (cd /home/romain/NEMO_UTILS/installs/lib && { ln -s -f libnetcdff.so.6.1.1 libnetcdff.so || { rm -f libnetcdff.so && ln -s libnetcdff.so.6.1.1 libnetcdff.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnetcdff.lai /home/romain/NEMO_UTILS/installs/lib/libnetcdff.la
+libtool: install: /usr/bin/install -c .libs/libnetcdff.a /home/romain/NEMO_UTILS/installs/lib/libnetcdff.a
+libtool: install: chmod 644 /home/romain/NEMO_UTILS/installs/lib/libnetcdff.a
+libtool: install: ranlib /home/romain/NEMO_UTILS/installs/lib/libnetcdff.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /home/romain/NEMO_UTILS/installs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/romain/NEMO_UTILS/installs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/home/romain/NEMO_UTILS/installs/include'
+ /usr/bin/install -c -m 644 netcdf_nc_data.mod netcdf_nc_interfaces.mod netcdf_nf_data.mod netcdf_nf_interfaces.mod netcdf_f03.mod netcdf_fortv2_c_interfaces.mod netcdf4_nc_interfaces.mod netcdf4_nf_interfaces.mod netcdf4_f03.mod typesizes.mod netcdf.mod netcdf.inc '/home/romain/NEMO_UTILS/installs/include'
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/fortran'
+Making install in .
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+ /bin/mkdir -p '/home/romain/NEMO_UTILS/installs/bin'
+ /usr/bin/install -c nf-config '/home/romain/NEMO_UTILS/installs/bin'
+ /bin/mkdir -p '/home/romain/NEMO_UTILS/installs/lib/pkgconfig'
+ /usr/bin/install -c -m 644 netcdf-fortran.pc '/home/romain/NEMO_UTILS/installs/lib/pkgconfig'
+make  install-data-hook
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+
++-------------------------------------------------------------+
+| Congratulations! You have successfully installed the netCDF |
+| Fortran libraries.                                          |
+|                                                             |
+| You can use script "nf-config" to find out the relevant     |
+| compiler options to build your application. Enter           |
+|                                                             |
+|     nf-config --help                                        |
+|                                                             |
+| for additional information.                                 |
+|                                                             |
+| CAUTION:                                                    |
+|                                                             |
+| If you have not already run "make check", then we strongly  |
+| recommend you do so. It does not take very long.            |
+|                                                             |
+| Before using netCDF to store important data, test your      |
+| build with "make check".                                    |
+|                                                             |
+| NetCDF is tested nightly on many platforms at Unidata       |
+| but your platform is probably different in some ways.       |
+|                                                             |
+| If any tests fail, please see the netCDF web site:          |
+| http://www.unidata.ucar.edu/software/netcdf/                |
+|                                                             |
+| NetCDF is developed and maintained at the Unidata Program   |
+| Center. Unidata provides a broad array of data and software |
+| tools for use in geoscience education and research.         |
+| http://www.unidata.ucar.edu                                 |
++-------------------------------------------------------------+
+
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5'
+Making install in nf_test
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf_test'
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf_test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf_test'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf_test'
+Making install in nf03_test
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf03_test'
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf03_test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf03_test'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/nf03_test'
+Making install in docs
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/docs'
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/docs'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/romain/NEMO_UTILS/installs/share/man/man3'
+ /usr/bin/install -c -m 644 netcdf_fortran.3 '/home/romain/NEMO_UTILS/installs/share/man/man3'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/docs'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/docs'
+Making install in examples
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+Making install in F77
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F77'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F77'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F77'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F77'
+Making install in F90
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make  install-am
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make[4]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples/F90'
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/examples'
+Making install in CMakeExtras
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/CMakeExtras'
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/CMakeExtras'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/CMakeExtras'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-fortran/netcdf-fortran-4.4.5/CMakeExtras'
