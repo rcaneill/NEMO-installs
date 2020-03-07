@@ -10,7 +10,7 @@ cd NEMO
 
 # If not downloaded, download NEMO
 if [ ! -d "NEMOGCM" ]; then
-  svn co https://forge.ipsl.jussieu.fr/nemo/svn/NEMO/releases/release-4.0.2 NEMOGCM
+  svn co https://forge.ipsl.jussieu.fr/nemo/svn/NEMO/releases/release-4.0.1 NEMOGCM
 fi
 
 cd NEMOGCM

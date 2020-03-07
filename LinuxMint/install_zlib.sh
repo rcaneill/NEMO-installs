@@ -13,7 +13,7 @@ LIB_VERSION="zlib-1.2.11"
 LIB_FILE="${LIB_VERSION}.tar.gz"
 
 # If not downloaded, download zlib
-if [ ! -d $LIB_FILE ]; then
+if [ ! -f $LIB_FILE ]; then
     wget https://www.zlib.net/${LIB_FILE}
 fi
 tar xvfz $LIB_FILE
