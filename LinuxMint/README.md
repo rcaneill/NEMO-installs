@@ -6,6 +6,7 @@ safer to compile them one by one.
 
 The script have been tested and successful on:
 - Linux Mint 19 Tara
+- Linux Mint 19.3 Tricia
 
 # Installation of libraries needed by NEMO
 Will create a folder in the home directory: /home/$USER/NEMO_UTILS/
