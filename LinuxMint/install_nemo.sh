@@ -18,7 +18,5 @@ cd NEMOGCM
 sed -e "s:\$INSTDIR:${INSTDIR}:" -e "s:\$WORKDIR:${WORKDIR}:" $SCRIPTPATH/arch_nemo/arch-local.fcm > arch/arch-local_$HOSTNAME.fcm
 #copying the file for variables and lib positions
 
-ARCHI=\'local_$HOSTNAME\'
 
-./makenemo -m $ARCHI -a CANAL -n 'my_canal' -j 5
 

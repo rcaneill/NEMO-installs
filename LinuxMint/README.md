@@ -33,14 +33,25 @@ Please check that you have the following packages installed
 
 # Order of execution of the scripts
 
+The HDF5 library takes a very long time to check the compilation, but this is
+an important step.
 
     $ ./install_zlib.sh	
     $ ./install_hdf5.sh
     $ ./install netCDF-c.sh
     $ ./install_netCDF-fortran.sh
     $ ./install_xios.sh
+    $ ./install_nemo.sh
 
-You can then inspire from the `install_nemo.sh` script to download and compile a NEMO configuration.
+
+You can then go to your NEMO directory and compile a configuration, e.g. CANAL:
+
+    $ ./makenemo -m "local-$HOSTNAME" -a CANAL -n 'my_canal' -j 5
+
+Then go to `tests/my_canal/EXP00`, copy the `xios-server.exe` binary file,
+set the server mode to true in `iodef.xml` and run nemo:
+
+    $ mpirun -np 1 ./nemo : -np 1 ./xios-server.exe
 
 # Note
 
