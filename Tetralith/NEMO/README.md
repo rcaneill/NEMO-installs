@@ -17,5 +17,5 @@
 Load your compiling environment and
 run makenemo according to your NEMO configuration, e.g.
 
-    $ module load module load buildenv-intel/2018a-eb
+    $ module load buildenv-intel/2018a-eb
     $ ./makenemo -n 'my_canal' -a 'CANAL' -m 'X64_TETRALITH' -j 8
