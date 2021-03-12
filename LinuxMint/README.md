@@ -39,8 +39,8 @@ an important step.
 
     $ ./install_zlib.sh	
     $ ./install_hdf5.sh
-    $ ./install netCDF-c.sh
-    $ ./install_netCDF-fortran.sh
+    $ ./install_netcdf-c.sh
+    $ ./install_netcdf-fortran.sh
     $ ./install_xios.sh
     $ ./install_nemo.sh
 
