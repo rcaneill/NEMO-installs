@@ -49,10 +49,10 @@ You can then go to your NEMO directory and compile a configuration, e.g. CANAL:
 
     $ ./makenemo -m "local-$HOSTNAME" -a CANAL -n 'my_canal' -j 5
 
-Then go to `tests/my_canal/EXP00`, copy the `xios-server.exe` binary file,
+Then go to `tests/my_canal/EXP00`, copy the `xios_server.exe` binary file,
 set the server mode to true in `iodef.xml` and run nemo:
 
-    $ mpirun -np 1 ./nemo : -np 1 ./xios-server.exe
+    $ mpirun -np 1 ./nemo : -np 1 ./xios_server.exe
 
 # Note
 
