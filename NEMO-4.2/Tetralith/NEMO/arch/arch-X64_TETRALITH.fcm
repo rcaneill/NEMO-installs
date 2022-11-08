@@ -33,7 +33,7 @@
 # Change the libraries HOME according to your system
 %NCDF_HOME           /software/sse/manual/netcdf-c-fortran/4.6.2/nsc1-parallel-private_hdf5-intel20018a-eb
 %HDF5_HOME           /software/sse/manual/netcdf-c-fortran/4.6.2/nsc1-parallel-private_hdf5-intel20018a-eb
-%XIOS_HOME           /proj/oceangu/users/x_romca/NEMOUTILS/xios-2.5-intel2018a-eb
+%XIOS_HOME           /proj/oceangu/users/x_romca/NEMOUTILS/xios_trunk-intel2018a-eb
 %OASIS_HOME          
 
 %NCDF_INC            -I%NCDF_HOME/include 
