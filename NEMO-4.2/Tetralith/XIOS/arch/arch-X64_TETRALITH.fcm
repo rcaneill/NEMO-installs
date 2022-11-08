@@ -6,7 +6,7 @@
 %FCOMPILER      mpiifort 
 %LINKER         mpiifort  -nofor-main
 
-%BASE_CFLAGS    -ansi -diag-disable 1125 -diag-disable 279 -D_GLIBCXX_USE_CXX11_ABI=0
+%BASE_CFLAGS    -ansi -diag-disable 1125 -diag-disable 279 -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++11
 %PROD_CFLAGS    -O2
 %DEV_CFLAGS     -g -traceback
 %DEBUG_CFLAGS   -DBZ_DEBUG -g -traceback -fno-inline

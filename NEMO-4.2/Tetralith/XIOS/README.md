@@ -2,10 +2,10 @@
 ## Download XIOS
 
 Replace the name of the xios folder with your actual compiler and/or
-building environment.
+building environment. NEMO 4.2 needs the trunk from xios:
 
-    $ svn co http://forge.ipsl.jussieu.fr/ioserver/svn/XIOS/branchs/xios-2.5 xios-2.5-intel2018a-eb
-    $ cd xios-2.5-intel2018a-eb
+    $ svn co http://forge.ipsl.jussieu.fr/ioserver/svn/XIOS/trunk xios_trunk-intel2018a-eb
+    $ cd xios_trunk-intel2018a-eb
 
 ## Arch files
 
