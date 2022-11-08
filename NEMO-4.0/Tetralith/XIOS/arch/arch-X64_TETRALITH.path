@@ -1,0 +1,12 @@
+# Change INCDIR and LIBDIR according to your system
+NETCDF_INCDIR="-I/software/sse/manual/netcdf-c-fortran/4.6.2/nsc1-parallel-private_hdf5-intel20018a-eb/include"
+NETCDF_LIBDIR="-L/software/sse/manual/netcdf-c-fortran/4.6.2/nsc1-parallel-private_hdf5-intel20018a-eb/lib"
+NETCDF_LIB="-lnetcdff -lnetcdf"
+
+MPI_INCDIR=""
+MPI_LIBDIR=""
+MPI_LIB="-lcurl"
+
+HDF5_INCDIR="-I/software/sse/manual/netcdf-c-fortran/4.6.2/nsc1-parallel-private_hdf5-intel20018a-eb/include"
+HDF5_LIBDIR="-L/software/sse/manual/netcdf-c-fortran/4.6.2/nsc1-parallel-private_hdf5-intel20018a-eb/lib"
+HDF5_LIB="-lhdf5_hl -lhdf5 -lz"

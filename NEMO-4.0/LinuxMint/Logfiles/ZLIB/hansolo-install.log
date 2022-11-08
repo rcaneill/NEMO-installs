@@ -1,0 +1,10 @@
+cp libz.a /home/romain/NEMO_UTILS/installs/lib
+chmod 644 /home/romain/NEMO_UTILS/installs/lib/libz.a
+cp libz.so.1.2.8 /home/romain/NEMO_UTILS/installs/lib
+chmod 755 /home/romain/NEMO_UTILS/installs/lib/libz.so.1.2.8
+cp zlib.3 /home/romain/NEMO_UTILS/installs/share/man/man3
+chmod 644 /home/romain/NEMO_UTILS/installs/share/man/man3/zlib.3
+cp zlib.pc /home/romain/NEMO_UTILS/installs/lib/pkgconfig
+chmod 644 /home/romain/NEMO_UTILS/installs/lib/pkgconfig/zlib.pc
+cp zlib.h zconf.h /home/romain/NEMO_UTILS/installs/include
+chmod 644 /home/romain/NEMO_UTILS/installs/include/zlib.h /home/romain/NEMO_UTILS/installs/include/zconf.h

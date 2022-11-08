@@ -1,0 +1,1270 @@
+Making check in include
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/include'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/include'
+Making check in h5_test
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/h5_test'
+make  tst_h_files tst_h_files2 tst_h_files4 tst_h_atts tst_h_atts3 tst_h_atts4 tst_h_vars tst_h_vars2 tst_h_vars3 tst_h_grps tst_h_compounds tst_h_compounds2 tst_h_wrt_cmp tst_h_vl tst_h_opaques tst_h_strings tst_h_strings1 tst_h_strings2 tst_h_ints tst_h_dimscales tst_h_dimscales1 tst_h_dimscales2 tst_h_dimscales3 tst_h_enums tst_h_dimscales4  tst_h_par
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/h5_test'
+depbase=`echo tst_h_files.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_files.o -MD -MP -MF $depbase.Tpo -c -o tst_h_files.o tst_h_files.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_files tst_h_files.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_files tst_h_files.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_files2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_files2.o -MD -MP -MF $depbase.Tpo -c -o tst_h_files2.o tst_h_files2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_files2 tst_h_files2.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_files2 tst_h_files2.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_files4.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_files4.o -MD -MP -MF $depbase.Tpo -c -o tst_h_files4.o tst_h_files4.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_files4 tst_h_files4.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_files4 tst_h_files4.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_atts.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_atts.o -MD -MP -MF $depbase.Tpo -c -o tst_h_atts.o tst_h_atts.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_atts tst_h_atts.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_atts tst_h_atts.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_atts3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_atts3.o -MD -MP -MF $depbase.Tpo -c -o tst_h_atts3.o tst_h_atts3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_atts3 tst_h_atts3.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_atts3 tst_h_atts3.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_atts4.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_atts4.o -MD -MP -MF $depbase.Tpo -c -o tst_h_atts4.o tst_h_atts4.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_atts4 tst_h_atts4.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_atts4 tst_h_atts4.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_vars.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_vars.o -MD -MP -MF $depbase.Tpo -c -o tst_h_vars.o tst_h_vars.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_vars tst_h_vars.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_vars tst_h_vars.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_vars2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_vars2.o -MD -MP -MF $depbase.Tpo -c -o tst_h_vars2.o tst_h_vars2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_vars2 tst_h_vars2.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_vars2 tst_h_vars2.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_vars3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_vars3.o -MD -MP -MF $depbase.Tpo -c -o tst_h_vars3.o tst_h_vars3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_vars3 tst_h_vars3.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_vars3 tst_h_vars3.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_grps.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_grps.o -MD -MP -MF $depbase.Tpo -c -o tst_h_grps.o tst_h_grps.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_grps tst_h_grps.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_grps tst_h_grps.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_compounds.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_compounds.o -MD -MP -MF $depbase.Tpo -c -o tst_h_compounds.o tst_h_compounds.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_compounds tst_h_compounds.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_compounds tst_h_compounds.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_compounds2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_compounds2.o -MD -MP -MF $depbase.Tpo -c -o tst_h_compounds2.o tst_h_compounds2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_compounds2 tst_h_compounds2.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_compounds2 tst_h_compounds2.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_wrt_cmp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_wrt_cmp.o -MD -MP -MF $depbase.Tpo -c -o tst_h_wrt_cmp.o tst_h_wrt_cmp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_wrt_cmp tst_h_wrt_cmp.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_wrt_cmp tst_h_wrt_cmp.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_vl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_vl.o -MD -MP -MF $depbase.Tpo -c -o tst_h_vl.o tst_h_vl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_vl tst_h_vl.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_vl tst_h_vl.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_opaques.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_opaques.o -MD -MP -MF $depbase.Tpo -c -o tst_h_opaques.o tst_h_opaques.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_opaques tst_h_opaques.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_opaques tst_h_opaques.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_strings.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_strings.o -MD -MP -MF $depbase.Tpo -c -o tst_h_strings.o tst_h_strings.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_strings tst_h_strings.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_strings tst_h_strings.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_strings1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_strings1.o -MD -MP -MF $depbase.Tpo -c -o tst_h_strings1.o tst_h_strings1.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_strings1 tst_h_strings1.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_strings1 tst_h_strings1.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_strings2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_strings2.o -MD -MP -MF $depbase.Tpo -c -o tst_h_strings2.o tst_h_strings2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_strings2 tst_h_strings2.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_strings2 tst_h_strings2.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_ints.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_ints.o -MD -MP -MF $depbase.Tpo -c -o tst_h_ints.o tst_h_ints.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_ints tst_h_ints.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_ints tst_h_ints.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_dimscales.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_dimscales.o -MD -MP -MF $depbase.Tpo -c -o tst_h_dimscales.o tst_h_dimscales.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_dimscales tst_h_dimscales.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_dimscales tst_h_dimscales.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_dimscales1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_dimscales1.o -MD -MP -MF $depbase.Tpo -c -o tst_h_dimscales1.o tst_h_dimscales1.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_dimscales1 tst_h_dimscales1.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_dimscales1 tst_h_dimscales1.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_dimscales2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_dimscales2.o -MD -MP -MF $depbase.Tpo -c -o tst_h_dimscales2.o tst_h_dimscales2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_dimscales2 tst_h_dimscales2.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_dimscales2 tst_h_dimscales2.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_dimscales3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_dimscales3.o -MD -MP -MF $depbase.Tpo -c -o tst_h_dimscales3.o tst_h_dimscales3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_dimscales3 tst_h_dimscales3.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_dimscales3 tst_h_dimscales3.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_enums.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_enums.o -MD -MP -MF $depbase.Tpo -c -o tst_h_enums.o tst_h_enums.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_enums tst_h_enums.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_enums tst_h_enums.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_dimscales4.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_dimscales4.o -MD -MP -MF $depbase.Tpo -c -o tst_h_dimscales4.o tst_h_dimscales4.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_dimscales4 tst_h_dimscales4.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_dimscales4 tst_h_dimscales4.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_par.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_par.o -MD -MP -MF $depbase.Tpo -c -o tst_h_par.o tst_h_par.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_par tst_h_par.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o tst_h_par tst_h_par.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/h5_test'
+make  check-TESTS
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/h5_test'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/h5_test'
+PASS: tst_h_files
+PASS: tst_h_files2
+PASS: tst_h_files4
+PASS: tst_h_atts
+PASS: tst_h_atts3
+PASS: tst_h_atts4
+PASS: tst_h_vars
+PASS: tst_h_vars2
+PASS: tst_h_vars3
+PASS: tst_h_grps
+PASS: tst_h_compounds
+PASS: tst_h_compounds2
+PASS: tst_h_wrt_cmp
+PASS: tst_h_vl
+PASS: tst_h_opaques
+PASS: tst_h_strings
+PASS: tst_h_strings1
+PASS: tst_h_strings2
+PASS: tst_h_ints
+PASS: tst_h_dimscales
+PASS: tst_h_dimscales1
+PASS: tst_h_dimscales2
+PASS: tst_h_dimscales3
+PASS: tst_h_enums
+PASS: tst_h_dimscales4
+PASS: run_par_tests.sh
+============================================================================
+Testsuite summary for netCDF 4.6.2
+============================================================================
+# TOTAL: 26
+# PASS:  26
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/h5_test'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/h5_test'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/h5_test'
+Making check in libdispatch
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdispatch'
+make  test_ncuri test_pathcvt
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdispatch'
+depbase=`echo test_ncuri.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT test_ncuri.o -MD -MP -MF $depbase.Tpo -c -o test_ncuri.o test_ncuri.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ncuri.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT ncuri.o -MD -MP -MF $depbase.Tpo -c -o ncuri.o ncuri.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ncbytes.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT ncbytes.o -MD -MP -MF $depbase.Tpo -c -o ncbytes.o ncbytes.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo nclist.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT nclist.o -MD -MP -MF $depbase.Tpo -c -o nclist.o nclist.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o test_ncuri test_ncuri.o ncuri.o ncbytes.o nclist.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o test_ncuri test_ncuri.o ncuri.o ncbytes.o nclist.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo test_pathcvt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT test_pathcvt.o -MD -MP -MF $depbase.Tpo -c -o test_pathcvt.o test_pathcvt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo dwinpath.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT dwinpath.o -MD -MP -MF $depbase.Tpo -c -o dwinpath.o dwinpath.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o test_pathcvt test_pathcvt.o dwinpath.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o test_pathcvt test_pathcvt.o dwinpath.o  -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdispatch'
+make  check-TESTS
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdispatch'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdispatch'
+PASS: test_ncuri
+PASS: test_pathcvt
+============================================================================
+Testsuite summary for netCDF 4.6.2
+============================================================================
+# TOTAL: 2
+# PASS:  2
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdispatch'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdispatch'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdispatch'
+Making check in libsrc
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libsrc'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libsrc'
+Making check in libsrc4
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libsrc4'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libsrc4'
+Making check in libhdf5
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libhdf5'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libhdf5'
+Making check in oc2
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/oc2'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/oc2'
+Making check in libdap2
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdap2'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdap2'
+Making check in libdap4
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdap4'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/libdap4'
+Making check in liblib
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/liblib'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/liblib'
+Making check in ncgen3
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncgen3'
+make  check-TESTS
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncgen3'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncgen3'
+PASS: run_tests.sh
+PASS: run_nc4_tests.sh
+============================================================================
+Testsuite summary for netCDF 4.6.2
+============================================================================
+# TOTAL: 2
+# PASS:  2
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncgen3'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncgen3'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncgen3'
+Making check in ncgen
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncgen'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncgen'
+Making check in ncdump
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+Making check in cdl
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump/cdl'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump/cdl'
+Making check in expected
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump/expected'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump/expected'
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+make  rewrite-scalar ref_ctest ref_ctest64 ncdump tst_utf8 bom tst_dimsizes nctrunc tst_fileinfo tst_create_files tst_h_rdc0 tst_group_data tst_enum_data tst_opaque_data tst_string_data tst_vlen_data tst_comp tst_comp2 tst_nans tst_special_atts tst_unicode tst_fillbug tst_compress tst_chunking tst_h_scalar tst_vlen_demo
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+depbase=`echo rewrite-scalar.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT rewrite-scalar.o -MD -MP -MF $depbase.Tpo -c -o rewrite-scalar.o rewrite-scalar.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o rewrite-scalar rewrite-scalar.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/rewrite-scalar rewrite-scalar.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo ref_ctest.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT ref_ctest.o -MD -MP -MF $depbase.Tpo -c -o ref_ctest.o ref_ctest.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o ref_ctest ref_ctest.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/ref_ctest ref_ctest.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo ref_ctest64.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT ref_ctest64.o -MD -MP -MF $depbase.Tpo -c -o ref_ctest64.o ref_ctest64.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o ref_ctest64 ref_ctest64.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/ref_ctest64 ref_ctest64.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+make[3]: 'ncdump' is up to date.
+depbase=`echo tst_utf8.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_utf8.o -MD -MP -MF $depbase.Tpo -c -o tst_utf8.o tst_utf8.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_utf8 tst_utf8.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_utf8 tst_utf8.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo bom.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT bom.o -MD -MP -MF $depbase.Tpo -c -o bom.o bom.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o bom bom.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/bom bom.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_dimsizes.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_dimsizes.o -MD -MP -MF $depbase.Tpo -c -o tst_dimsizes.o tst_dimsizes.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_dimsizes tst_dimsizes.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_dimsizes tst_dimsizes.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo nctrunc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT nctrunc.o -MD -MP -MF $depbase.Tpo -c -o nctrunc.o nctrunc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o nctrunc nctrunc.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/nctrunc nctrunc.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_fileinfo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_fileinfo.o -MD -MP -MF $depbase.Tpo -c -o tst_fileinfo.o tst_fileinfo.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_fileinfo tst_fileinfo.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_fileinfo tst_fileinfo.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_create_files.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_create_files.o -MD -MP -MF $depbase.Tpo -c -o tst_create_files.o tst_create_files.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_create_files tst_create_files.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_create_files tst_create_files.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_rdc0.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_rdc0.o -MD -MP -MF $depbase.Tpo -c -o tst_h_rdc0.o tst_h_rdc0.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_rdc0 tst_h_rdc0.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_h_rdc0 tst_h_rdc0.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_group_data.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_group_data.o -MD -MP -MF $depbase.Tpo -c -o tst_group_data.o tst_group_data.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_group_data tst_group_data.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_group_data tst_group_data.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_enum_data.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_enum_data.o -MD -MP -MF $depbase.Tpo -c -o tst_enum_data.o tst_enum_data.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_enum_data tst_enum_data.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_enum_data tst_enum_data.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_opaque_data.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_opaque_data.o -MD -MP -MF $depbase.Tpo -c -o tst_opaque_data.o tst_opaque_data.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_opaque_data tst_opaque_data.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_opaque_data tst_opaque_data.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_string_data.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_string_data.o -MD -MP -MF $depbase.Tpo -c -o tst_string_data.o tst_string_data.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_string_data tst_string_data.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_string_data tst_string_data.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_vlen_data.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_vlen_data.o -MD -MP -MF $depbase.Tpo -c -o tst_vlen_data.o tst_vlen_data.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_vlen_data tst_vlen_data.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_vlen_data tst_vlen_data.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_comp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_comp.o -MD -MP -MF $depbase.Tpo -c -o tst_comp.o tst_comp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_comp tst_comp.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_comp tst_comp.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_comp2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_comp2.o -MD -MP -MF $depbase.Tpo -c -o tst_comp2.o tst_comp2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_comp2 tst_comp2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_comp2 tst_comp2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_nans.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_nans.o -MD -MP -MF $depbase.Tpo -c -o tst_nans.o tst_nans.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_nans tst_nans.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_nans tst_nans.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_special_atts.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_special_atts.o -MD -MP -MF $depbase.Tpo -c -o tst_special_atts.o tst_special_atts.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_special_atts tst_special_atts.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_special_atts tst_special_atts.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_unicode.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_unicode.o -MD -MP -MF $depbase.Tpo -c -o tst_unicode.o tst_unicode.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_unicode tst_unicode.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_unicode tst_unicode.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_fillbug.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_fillbug.o -MD -MP -MF $depbase.Tpo -c -o tst_fillbug.o tst_fillbug.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_fillbug tst_fillbug.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_fillbug tst_fillbug.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_compress.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_compress.o -MD -MP -MF $depbase.Tpo -c -o tst_compress.o tst_compress.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_compress tst_compress.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_compress tst_compress.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_chunking.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_chunking.o -MD -MP -MF $depbase.Tpo -c -o tst_chunking.o tst_chunking.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_chunking tst_chunking.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_chunking tst_chunking.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_scalar.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_scalar.o -MD -MP -MF $depbase.Tpo -c -o tst_h_scalar.o tst_h_scalar.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_scalar tst_h_scalar.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_h_scalar tst_h_scalar.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_vlen_demo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_vlen_demo.o -MD -MP -MF $depbase.Tpo -c -o tst_vlen_demo.o tst_vlen_demo.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_vlen_demo tst_vlen_demo.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_vlen_demo tst_vlen_demo.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+make  check-TESTS
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+make[4]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+PASS: tst_inttags.sh
+PASS: run_tests.sh
+PASS: tst_64bit.sh
+PASS: ref_ctest
+PASS: ref_ctest64
+PASS: tst_output.sh
+PASS: tst_lengths.sh
+PASS: tst_calendars.sh
+PASS: run_utf8_tests.sh
+PASS: tst_nccopy3.sh
+PASS: tst_nccopy3_subset.sh
+PASS: tst_charfill.sh
+PASS: tst_iter.sh
+PASS: tst_formatx3.sh
+PASS: tst_bom.sh
+PASS: tst_dimsizes.sh
+PASS: run_ncgen_tests.sh
+PASS: tst_ncgen4_classic.sh
+PASS: tst_null_byte_padding.sh
+PASS: tst_fileinfo.sh
+PASS: tst_hdf5_offset.sh
+PASS: tst_inttags4.sh
+PASS: tst_netcdf4.sh
+PASS: tst_fillbug.sh
+PASS: tst_netcdf4_4.sh
+PASS: tst_ncgen4.sh
+PASS: tst_h_scalar.sh
+PASS: tst_nccopy4.sh
+PASS: tst_nccopy5.sh
+PASS: tst_grp_spec.sh
+PASS: tst_mud.sh
+PASS: tst_formatx4.sh
+PASS: run_utf8_nc4_tests.sh
+PASS: run_back_comp_tests.sh
+PASS: run_ncgen_nc4_tests.sh
+PASS: tst_inmemory_nc3.sh
+PASS: tst_inmemory_nc4.sh
+============================================================================
+Testsuite summary for netCDF 4.6.2
+============================================================================
+# TOTAL: 37
+# PASS:  37
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[4]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/ncdump'
+Making check in plugins
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/plugins'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/plugins'
+Making check in nctest
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nctest'
+make  nctest tst_rename
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nctest'
+depbase=`echo add.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT add.o -MD -MP -MF $depbase.Tpo -c -o add.o add.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo atttests.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT atttests.o -MD -MP -MF $depbase.Tpo -c -o atttests.o atttests.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo cdftests.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT cdftests.o -MD -MP -MF $depbase.Tpo -c -o cdftests.o cdftests.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo dimtests.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT dimtests.o -MD -MP -MF $depbase.Tpo -c -o dimtests.o dimtests.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo driver.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT driver.o -MD -MP -MF $depbase.Tpo -c -o driver.o driver.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo emalloc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT emalloc.o -MD -MP -MF $depbase.Tpo -c -o emalloc.o emalloc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo error.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT error.o -MD -MP -MF $depbase.Tpo -c -o error.o error.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo misctest.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT misctest.o -MD -MP -MF $depbase.Tpo -c -o misctest.o misctest.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo rec.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT rec.o -MD -MP -MF $depbase.Tpo -c -o rec.o rec.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo slabs.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT slabs.o -MD -MP -MF $depbase.Tpo -c -o slabs.o slabs.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo val.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT val.o -MD -MP -MF $depbase.Tpo -c -o val.o val.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo vardef.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT vardef.o -MD -MP -MF $depbase.Tpo -c -o vardef.o vardef.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo varget.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT varget.o -MD -MP -MF $depbase.Tpo -c -o varget.o varget.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo vargetg.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT vargetg.o -MD -MP -MF $depbase.Tpo -c -o vargetg.o vargetg.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo varput.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT varput.o -MD -MP -MF $depbase.Tpo -c -o varput.o varput.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo varputg.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT varputg.o -MD -MP -MF $depbase.Tpo -c -o varputg.o varputg.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo vartests.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT vartests.o -MD -MP -MF $depbase.Tpo -c -o vartests.o vartests.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo vputget.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT vputget.o -MD -MP -MF $depbase.Tpo -c -o vputget.o vputget.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo vputgetg.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT vputgetg.o -MD -MP -MF $depbase.Tpo -c -o vputgetg.o vputgetg.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o nctest add.o atttests.o cdftests.o dimtests.o driver.o emalloc.o error.o misctest.o rec.o slabs.o val.o vardef.o varget.o vargetg.o varput.o varputg.o vartests.o vputget.o vputgetg.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/nctest add.o atttests.o cdftests.o dimtests.o driver.o emalloc.o error.o misctest.o rec.o slabs.o val.o vardef.o varget.o vargetg.o varput.o varputg.o vartests.o vputget.o vputgetg.o  ../liblib/.libs/libnetcdf.so -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_rename.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_rename.o -MD -MP -MF $depbase.Tpo -c -o tst_rename.o tst_rename.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_rename tst_rename.o  -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_rename tst_rename.o  ../liblib/.libs/libnetcdf.so -L/home/romain/NEMO_UTILS/installs/lib /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nctest'
+make  check-TESTS
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nctest'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nctest'
+PASS: nctest
+PASS: tst_rename
+PASS: compare_test_files.sh
+============================================================================
+Testsuite summary for netCDF 4.6.2
+============================================================================
+# TOTAL: 3
+# PASS:  3
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nctest'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nctest'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nctest'
+Making check in nc_test
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test'
+make  t_nc tst_small nc_test tst_misc tst_norm tst_names tst_nofill tst_nofill2 tst_nofill3 tst_atts3 tst_meta tst_inq_type tst_utf8_validate tst_utf8_phrases tst_global_fillval tst_max_var_dims tst_formats tst_def_var_fill tst_err_enddef tst_default_format     tst_diskless6  tst_diskless tst_diskless3 tst_diskless4 tst_diskless5 tst_inmemory tst_open_mem tst_diskless2 tst_open_cdf5
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test'
+depbase=`echo t_nc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT t_nc.o -MD -MP -MF $depbase.Tpo -c -o t_nc.o t_nc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o t_nc t_nc.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/t_nc t_nc.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_small.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_small.o -MD -MP -MF $depbase.Tpo -c -o tst_small.o tst_small.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_small tst_small.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_small tst_small.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo nc_test.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT nc_test.o -MD -MP -MF $depbase.Tpo -c -o nc_test.o nc_test.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo error.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT error.o -MD -MP -MF $depbase.Tpo -c -o error.o error.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test_get.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT test_get.o -MD -MP -MF $depbase.Tpo -c -o test_get.o test_get.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test_put.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT test_put.o -MD -MP -MF $depbase.Tpo -c -o test_put.o test_put.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test_read.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT test_read.o -MD -MP -MF $depbase.Tpo -c -o test_read.o test_read.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test_write.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT test_write.o -MD -MP -MF $depbase.Tpo -c -o test_write.o test_write.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo util.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT util.o -MD -MP -MF $depbase.Tpo -c -o util.o util.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o nc_test nc_test.o error.o test_get.o test_put.o test_read.o test_write.o util.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/nc_test nc_test.o error.o test_get.o test_put.o test_read.o test_write.o util.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_misc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_misc.o -MD -MP -MF $depbase.Tpo -c -o tst_misc.o tst_misc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_misc tst_misc.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_misc tst_misc.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_norm.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_norm.o -MD -MP -MF $depbase.Tpo -c -o tst_norm.o tst_norm.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_norm tst_norm.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_norm tst_norm.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_names.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_names.o -MD -MP -MF $depbase.Tpo -c -o tst_names.o tst_names.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_names tst_names.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_names tst_names.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_nofill.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_nofill.o -MD -MP -MF $depbase.Tpo -c -o tst_nofill.o tst_nofill.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_nofill tst_nofill.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_nofill tst_nofill.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_nofill2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_nofill2.o -MD -MP -MF $depbase.Tpo -c -o tst_nofill2.o tst_nofill2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_nofill2 tst_nofill2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_nofill2 tst_nofill2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_nofill3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_nofill3.o -MD -MP -MF $depbase.Tpo -c -o tst_nofill3.o tst_nofill3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_nofill3 tst_nofill3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_nofill3 tst_nofill3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_atts3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_atts3.o -MD -MP -MF $depbase.Tpo -c -o tst_atts3.o tst_atts3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_atts3 tst_atts3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_atts3 tst_atts3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_meta.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_meta.o -MD -MP -MF $depbase.Tpo -c -o tst_meta.o tst_meta.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_meta tst_meta.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_meta tst_meta.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_inq_type.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_inq_type.o -MD -MP -MF $depbase.Tpo -c -o tst_inq_type.o tst_inq_type.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_inq_type tst_inq_type.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_inq_type tst_inq_type.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_utf8_validate.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_utf8_validate.o -MD -MP -MF $depbase.Tpo -c -o tst_utf8_validate.o tst_utf8_validate.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_utf8_validate tst_utf8_validate.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_utf8_validate tst_utf8_validate.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_utf8_phrases.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_utf8_phrases.o -MD -MP -MF $depbase.Tpo -c -o tst_utf8_phrases.o tst_utf8_phrases.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_utf8_phrases tst_utf8_phrases.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_utf8_phrases tst_utf8_phrases.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_global_fillval.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_global_fillval.o -MD -MP -MF $depbase.Tpo -c -o tst_global_fillval.o tst_global_fillval.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_global_fillval tst_global_fillval.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_global_fillval tst_global_fillval.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_max_var_dims.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_max_var_dims.o -MD -MP -MF $depbase.Tpo -c -o tst_max_var_dims.o tst_max_var_dims.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_max_var_dims tst_max_var_dims.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_max_var_dims tst_max_var_dims.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_formats.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_formats.o -MD -MP -MF $depbase.Tpo -c -o tst_formats.o tst_formats.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_formats tst_formats.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_formats tst_formats.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_def_var_fill.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_def_var_fill.o -MD -MP -MF $depbase.Tpo -c -o tst_def_var_fill.o tst_def_var_fill.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_def_var_fill tst_def_var_fill.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_def_var_fill tst_def_var_fill.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_err_enddef.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_err_enddef.o -MD -MP -MF $depbase.Tpo -c -o tst_err_enddef.o tst_err_enddef.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_err_enddef tst_err_enddef.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_err_enddef tst_err_enddef.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_default_format.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_default_format.o -MD -MP -MF $depbase.Tpo -c -o tst_default_format.o tst_default_format.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_default_format tst_default_format.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_default_format tst_default_format.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_diskless6.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_diskless6.o -MD -MP -MF $depbase.Tpo -c -o tst_diskless6.o tst_diskless6.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_diskless6 tst_diskless6.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_diskless6 tst_diskless6.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_diskless.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_diskless.o -MD -MP -MF $depbase.Tpo -c -o tst_diskless.o tst_diskless.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_diskless tst_diskless.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_diskless tst_diskless.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_diskless3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_diskless3.o -MD -MP -MF $depbase.Tpo -c -o tst_diskless3.o tst_diskless3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_diskless3 tst_diskless3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_diskless3 tst_diskless3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_diskless4.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_diskless4.o -MD -MP -MF $depbase.Tpo -c -o tst_diskless4.o tst_diskless4.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_diskless4 tst_diskless4.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_diskless4 tst_diskless4.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_diskless5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_diskless5.o -MD -MP -MF $depbase.Tpo -c -o tst_diskless5.o tst_diskless5.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_diskless5 tst_diskless5.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_diskless5 tst_diskless5.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_inmemory.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_inmemory.o -MD -MP -MF $depbase.Tpo -c -o tst_inmemory.o tst_inmemory.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_inmemory tst_inmemory.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_inmemory tst_inmemory.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_open_mem.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_open_mem.o -MD -MP -MF $depbase.Tpo -c -o tst_open_mem.o tst_open_mem.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_open_mem tst_open_mem.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_open_mem tst_open_mem.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_diskless2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_diskless2.o -MD -MP -MF $depbase.Tpo -c -o tst_diskless2.o tst_diskless2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_diskless2 tst_diskless2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_diskless2 tst_diskless2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_open_cdf5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I../libsrc -DTOPSRCDIR=/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2 -DTOPBINDIR= -I../liblib -I../include -I../libsrc -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_open_cdf5.o -MD -MP -MF $depbase.Tpo -c -o tst_open_cdf5.o tst_open_cdf5.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC  -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_open_cdf5 tst_open_cdf5.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_open_cdf5 tst_open_cdf5.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test'
+make  check-TESTS
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test'
+PASS: t_nc
+PASS: tst_small
+PASS: nc_test
+PASS: tst_misc
+PASS: tst_norm
+PASS: tst_names
+PASS: tst_nofill
+PASS: tst_nofill2
+PASS: tst_nofill3
+PASS: tst_atts3
+PASS: tst_meta
+PASS: tst_inq_type
+PASS: tst_utf8_validate
+PASS: tst_utf8_phrases
+PASS: tst_global_fillval
+PASS: tst_max_var_dims
+PASS: tst_formats
+PASS: tst_def_var_fill
+PASS: tst_err_enddef
+PASS: tst_default_format
+PASS: tst_diskless6
+PASS: run_diskless.sh
+PASS: run_diskless5.sh
+PASS: run_inmemory.sh
+PASS: run_cdf5.sh
+============================================================================
+Testsuite summary for netCDF 4.6.2
+============================================================================
+# TOTAL: 25
+# PASS:  25
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test'
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test'
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test'
+Making check in nc_test4
+make[1]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test4'
+make  tst_dims tst_dims2 tst_dims3 tst_files tst_files4 tst_vars tst_varms tst_unlim_vars tst_converts tst_converts2 tst_grps tst_grps2 tst_compounds tst_compounds2 tst_compounds3 tst_opaques tst_strings tst_strings2 tst_interops tst_interops4 tst_interops5 tst_interops6 tst_enums tst_coords tst_coords2 tst_coords3 tst_vars3 tst_vars4 tst_chunks tst_chunks2 tst_utf8 tst_fills tst_fills2 tst_fillbug tst_xplatform tst_xplatform2 tst_endian_fill tst_atts t_type cdm_sea_soundings tst_camrun tst_vl tst_atts1 tst_atts2 tst_vars2 tst_files5 tst_files6 tst_sync tst_h_scalar tst_rename tst_rename2 tst_h5_endians tst_atts_string_rewrite tst_hdf5_file_compat tst_fill_attr_vanish tst_rehash tst_filterparser tst_bug324 tst_types tst_atts3 tst_put_vars tst_elatefill tst_udf tst_h_strbug tst_h_refs renamegroup tst_empty_vlen_unlim  tst_v2   tst_mpi_parallel tst_parallel tst_parallel3 tst_parallel4 tst_parallel5 tst_nc4perf tst_mode tst_simplerw_coll_r tst_mode 
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test4'
+depbase=`echo tst_dims.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_dims.o -MD -MP -MF $depbase.Tpo -c -o tst_dims.o tst_dims.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_dims tst_dims.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_dims tst_dims.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_dims2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_dims2.o -MD -MP -MF $depbase.Tpo -c -o tst_dims2.o tst_dims2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_dims2 tst_dims2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_dims2 tst_dims2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_dims3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_dims3.o -MD -MP -MF $depbase.Tpo -c -o tst_dims3.o tst_dims3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_dims3 tst_dims3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_dims3 tst_dims3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_files.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_files.o -MD -MP -MF $depbase.Tpo -c -o tst_files.o tst_files.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_files tst_files.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_files tst_files.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_files4.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_files4.o -MD -MP -MF $depbase.Tpo -c -o tst_files4.o tst_files4.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_files4 tst_files4.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_files4 tst_files4.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_vars.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_vars.o -MD -MP -MF $depbase.Tpo -c -o tst_vars.o tst_vars.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_vars tst_vars.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_vars tst_vars.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_varms.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_varms.o -MD -MP -MF $depbase.Tpo -c -o tst_varms.o tst_varms.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_varms tst_varms.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_varms tst_varms.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_unlim_vars.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_unlim_vars.o -MD -MP -MF $depbase.Tpo -c -o tst_unlim_vars.o tst_unlim_vars.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_unlim_vars tst_unlim_vars.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_unlim_vars tst_unlim_vars.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_converts.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_converts.o -MD -MP -MF $depbase.Tpo -c -o tst_converts.o tst_converts.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_converts tst_converts.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_converts tst_converts.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_converts2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_converts2.o -MD -MP -MF $depbase.Tpo -c -o tst_converts2.o tst_converts2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_converts2 tst_converts2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_converts2 tst_converts2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_grps.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_grps.o -MD -MP -MF $depbase.Tpo -c -o tst_grps.o tst_grps.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_grps tst_grps.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_grps tst_grps.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_grps2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_grps2.o -MD -MP -MF $depbase.Tpo -c -o tst_grps2.o tst_grps2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_grps2 tst_grps2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_grps2 tst_grps2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_compounds.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_compounds.o -MD -MP -MF $depbase.Tpo -c -o tst_compounds.o tst_compounds.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_compounds tst_compounds.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_compounds tst_compounds.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_compounds2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_compounds2.o -MD -MP -MF $depbase.Tpo -c -o tst_compounds2.o tst_compounds2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_compounds2 tst_compounds2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_compounds2 tst_compounds2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_compounds3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_compounds3.o -MD -MP -MF $depbase.Tpo -c -o tst_compounds3.o tst_compounds3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_compounds3 tst_compounds3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_compounds3 tst_compounds3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_opaques.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_opaques.o -MD -MP -MF $depbase.Tpo -c -o tst_opaques.o tst_opaques.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_opaques tst_opaques.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_opaques tst_opaques.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_strings.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_strings.o -MD -MP -MF $depbase.Tpo -c -o tst_strings.o tst_strings.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_strings tst_strings.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_strings tst_strings.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_strings2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_strings2.o -MD -MP -MF $depbase.Tpo -c -o tst_strings2.o tst_strings2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_strings2 tst_strings2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_strings2 tst_strings2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_interops.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_interops.o -MD -MP -MF $depbase.Tpo -c -o tst_interops.o tst_interops.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_interops tst_interops.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_interops tst_interops.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_interops4.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_interops4.o -MD -MP -MF $depbase.Tpo -c -o tst_interops4.o tst_interops4.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_interops4 tst_interops4.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_interops4 tst_interops4.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_interops5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_interops5.o -MD -MP -MF $depbase.Tpo -c -o tst_interops5.o tst_interops5.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_interops5 tst_interops5.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_interops5 tst_interops5.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_interops6.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_interops6.o -MD -MP -MF $depbase.Tpo -c -o tst_interops6.o tst_interops6.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_interops6 tst_interops6.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_interops6 tst_interops6.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_enums.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_enums.o -MD -MP -MF $depbase.Tpo -c -o tst_enums.o tst_enums.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_enums tst_enums.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_enums tst_enums.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_coords.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_coords.o -MD -MP -MF $depbase.Tpo -c -o tst_coords.o tst_coords.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_coords tst_coords.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_coords tst_coords.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_coords2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_coords2.o -MD -MP -MF $depbase.Tpo -c -o tst_coords2.o tst_coords2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_coords2 tst_coords2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_coords2 tst_coords2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_coords3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_coords3.o -MD -MP -MF $depbase.Tpo -c -o tst_coords3.o tst_coords3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_coords3 tst_coords3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_coords3 tst_coords3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_vars3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_vars3.o -MD -MP -MF $depbase.Tpo -c -o tst_vars3.o tst_vars3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_vars3 tst_vars3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_vars3 tst_vars3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_vars4.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_vars4.o -MD -MP -MF $depbase.Tpo -c -o tst_vars4.o tst_vars4.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_vars4 tst_vars4.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_vars4 tst_vars4.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_chunks.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_chunks.o -MD -MP -MF $depbase.Tpo -c -o tst_chunks.o tst_chunks.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_chunks tst_chunks.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_chunks tst_chunks.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_chunks2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_chunks2.o -MD -MP -MF $depbase.Tpo -c -o tst_chunks2.o tst_chunks2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_chunks2 tst_chunks2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_chunks2 tst_chunks2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_utf8.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_utf8.o -MD -MP -MF $depbase.Tpo -c -o tst_utf8.o tst_utf8.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_utf8 tst_utf8.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_utf8 tst_utf8.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_fills.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_fills.o -MD -MP -MF $depbase.Tpo -c -o tst_fills.o tst_fills.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_fills tst_fills.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_fills tst_fills.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_fills2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_fills2.o -MD -MP -MF $depbase.Tpo -c -o tst_fills2.o tst_fills2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_fills2 tst_fills2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_fills2 tst_fills2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_fillbug.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_fillbug.o -MD -MP -MF $depbase.Tpo -c -o tst_fillbug.o tst_fillbug.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_fillbug tst_fillbug.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_fillbug tst_fillbug.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_xplatform.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_xplatform.o -MD -MP -MF $depbase.Tpo -c -o tst_xplatform.o tst_xplatform.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_xplatform tst_xplatform.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_xplatform tst_xplatform.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_xplatform2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_xplatform2.o -MD -MP -MF $depbase.Tpo -c -o tst_xplatform2.o tst_xplatform2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_xplatform2 tst_xplatform2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_xplatform2 tst_xplatform2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_endian_fill.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_endian_fill.o -MD -MP -MF $depbase.Tpo -c -o tst_endian_fill.o tst_endian_fill.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_endian_fill tst_endian_fill.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_endian_fill tst_endian_fill.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_atts.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_atts.o -MD -MP -MF $depbase.Tpo -c -o tst_atts.o tst_atts.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_atts tst_atts.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_atts tst_atts.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo t_type.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT t_type.o -MD -MP -MF $depbase.Tpo -c -o t_type.o t_type.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o t_type t_type.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/t_type t_type.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo cdm_sea_soundings.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT cdm_sea_soundings.o -MD -MP -MF $depbase.Tpo -c -o cdm_sea_soundings.o cdm_sea_soundings.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o cdm_sea_soundings cdm_sea_soundings.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/cdm_sea_soundings cdm_sea_soundings.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_camrun.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_camrun.o -MD -MP -MF $depbase.Tpo -c -o tst_camrun.o tst_camrun.c &&\
+mv -f $depbase.Tpo $depbase.Po
+tst_camrun.c: In function ‘get_mem_used2’:
+tst_camrun.c:685:7: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+       fscanf(pf, "%u %u %u %u %u %u", &size, &resident, &share,
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       &text, &lib, &data);
+       ~~~~~~~~~~~~~~~~~~~
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_camrun tst_camrun.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_camrun tst_camrun.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_vl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_vl.o -MD -MP -MF $depbase.Tpo -c -o tst_vl.o tst_vl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_vl tst_vl.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_vl tst_vl.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_atts1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_atts1.o -MD -MP -MF $depbase.Tpo -c -o tst_atts1.o tst_atts1.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_atts1 tst_atts1.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_atts1 tst_atts1.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_atts2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_atts2.o -MD -MP -MF $depbase.Tpo -c -o tst_atts2.o tst_atts2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_atts2 tst_atts2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_atts2 tst_atts2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_vars2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_vars2.o -MD -MP -MF $depbase.Tpo -c -o tst_vars2.o tst_vars2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_vars2 tst_vars2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_vars2 tst_vars2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_files5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_files5.o -MD -MP -MF $depbase.Tpo -c -o tst_files5.o tst_files5.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_files5 tst_files5.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_files5 tst_files5.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_files6.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_files6.o -MD -MP -MF $depbase.Tpo -c -o tst_files6.o tst_files6.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_files6 tst_files6.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_files6 tst_files6.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_sync.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_sync.o -MD -MP -MF $depbase.Tpo -c -o tst_sync.o tst_sync.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_sync tst_sync.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_sync tst_sync.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_scalar.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_scalar.o -MD -MP -MF $depbase.Tpo -c -o tst_h_scalar.o tst_h_scalar.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_scalar tst_h_scalar.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_h_scalar tst_h_scalar.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_rename.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_rename.o -MD -MP -MF $depbase.Tpo -c -o tst_rename.o tst_rename.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_rename tst_rename.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_rename tst_rename.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_rename2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_rename2.o -MD -MP -MF $depbase.Tpo -c -o tst_rename2.o tst_rename2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_rename2 tst_rename2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_rename2 tst_rename2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h5_endians.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h5_endians.o -MD -MP -MF $depbase.Tpo -c -o tst_h5_endians.o tst_h5_endians.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h5_endians tst_h5_endians.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_h5_endians tst_h5_endians.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_atts_string_rewrite.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_atts_string_rewrite.o -MD -MP -MF $depbase.Tpo -c -o tst_atts_string_rewrite.o tst_atts_string_rewrite.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_atts_string_rewrite tst_atts_string_rewrite.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_atts_string_rewrite tst_atts_string_rewrite.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_hdf5_file_compat.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_hdf5_file_compat.o -MD -MP -MF $depbase.Tpo -c -o tst_hdf5_file_compat.o tst_hdf5_file_compat.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_hdf5_file_compat tst_hdf5_file_compat.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_hdf5_file_compat tst_hdf5_file_compat.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_fill_attr_vanish.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_fill_attr_vanish.o -MD -MP -MF $depbase.Tpo -c -o tst_fill_attr_vanish.o tst_fill_attr_vanish.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_fill_attr_vanish tst_fill_attr_vanish.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_fill_attr_vanish tst_fill_attr_vanish.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_rehash.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_rehash.o -MD -MP -MF $depbase.Tpo -c -o tst_rehash.o tst_rehash.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_rehash tst_rehash.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_rehash tst_rehash.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_filterparser.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_filterparser.o -MD -MP -MF $depbase.Tpo -c -o tst_filterparser.o tst_filterparser.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_filterparser tst_filterparser.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_filterparser tst_filterparser.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_bug324.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_bug324.o -MD -MP -MF $depbase.Tpo -c -o tst_bug324.o tst_bug324.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_bug324 tst_bug324.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_bug324 tst_bug324.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_types.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_types.o -MD -MP -MF $depbase.Tpo -c -o tst_types.o tst_types.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_types tst_types.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_types tst_types.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_atts3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_atts3.o -MD -MP -MF $depbase.Tpo -c -o tst_atts3.o tst_atts3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_atts3 tst_atts3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_atts3 tst_atts3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_put_vars.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_put_vars.o -MD -MP -MF $depbase.Tpo -c -o tst_put_vars.o tst_put_vars.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_put_vars tst_put_vars.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_put_vars tst_put_vars.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_elatefill.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_elatefill.o -MD -MP -MF $depbase.Tpo -c -o tst_elatefill.o tst_elatefill.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_elatefill tst_elatefill.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_elatefill tst_elatefill.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_udf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_udf.o -MD -MP -MF $depbase.Tpo -c -o tst_udf.o tst_udf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_udf tst_udf.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_udf tst_udf.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_strbug.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_strbug.o -MD -MP -MF $depbase.Tpo -c -o tst_h_strbug.o tst_h_strbug.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_strbug tst_h_strbug.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_h_strbug tst_h_strbug.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_h_refs.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_h_refs.o -MD -MP -MF $depbase.Tpo -c -o tst_h_refs.o tst_h_refs.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_h_refs tst_h_refs.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_h_refs tst_h_refs.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo renamegroup.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT renamegroup.o -MD -MP -MF $depbase.Tpo -c -o renamegroup.o renamegroup.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o renamegroup renamegroup.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/renamegroup renamegroup.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_empty_vlen_unlim.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_empty_vlen_unlim.o -MD -MP -MF $depbase.Tpo -c -o tst_empty_vlen_unlim.o tst_empty_vlen_unlim.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_empty_vlen_unlim tst_empty_vlen_unlim.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_empty_vlen_unlim tst_empty_vlen_unlim.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_v2.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_v2.o -MD -MP -MF $depbase.Tpo -c -o tst_v2.o tst_v2.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_v2 tst_v2.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_v2 tst_v2.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_mpi_parallel.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_mpi_parallel.o -MD -MP -MF $depbase.Tpo -c -o tst_mpi_parallel.o tst_mpi_parallel.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_mpi_parallel tst_mpi_parallel.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_mpi_parallel tst_mpi_parallel.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_parallel.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_parallel.o -MD -MP -MF $depbase.Tpo -c -o tst_parallel.o tst_parallel.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_parallel tst_parallel.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_parallel tst_parallel.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_parallel3.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_parallel3.o -MD -MP -MF $depbase.Tpo -c -o tst_parallel3.o tst_parallel3.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_parallel3 tst_parallel3.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_parallel3 tst_parallel3.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_parallel4.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_parallel4.o -MD -MP -MF $depbase.Tpo -c -o tst_parallel4.o tst_parallel4.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_parallel4 tst_parallel4.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_parallel4 tst_parallel4.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_parallel5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_parallel5.o -MD -MP -MF $depbase.Tpo -c -o tst_parallel5.o tst_parallel5.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_parallel5 tst_parallel5.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_parallel5 tst_parallel5.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_nc4perf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_nc4perf.o -MD -MP -MF $depbase.Tpo -c -o tst_nc4perf.o tst_nc4perf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_nc4perf tst_nc4perf.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_nc4perf tst_nc4perf.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_mode.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_mode.o -MD -MP -MF $depbase.Tpo -c -o tst_mode.o tst_mode.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_mode tst_mode.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_mode tst_mode.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+depbase=`echo tst_simplerw_coll_r.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+/usr/bin/mpicc -DHAVE_CONFIG_H -I. -I..  -I../include -I../oc2 -I/home/romain/NEMO_UTILS/installs/include -DpgiFortran  -O3 -fPIC -MT tst_simplerw_coll_r.o -MD -MP -MF $depbase.Tpo -c -o tst_simplerw_coll_r.o tst_simplerw_coll_r.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../libtool  --tag=CC   --mode=link /usr/bin/mpicc  -O3 -fPIC ../liblib/libnetcdf.la -L/home/romain/NEMO_UTILS/installs/lib -lhdf5_hl -lhdf5 -o tst_simplerw_coll_r tst_simplerw_coll_r.o ../liblib/libnetcdf.la -lhdf5_hl -lhdf5 -lm -ldl -lz -lcurl -lmpi
+libtool: link: /usr/bin/mpicc -O3 -fPIC -o .libs/tst_simplerw_coll_r tst_simplerw_coll_r.o  -L/home/romain/NEMO_UTILS/installs/lib ../liblib/.libs/libnetcdf.so /home/romain/NEMO_UTILS/installs/lib/libhdf5_hl.so /home/romain/NEMO_UTILS/installs/lib/libhdf5.so -lm -ldl -lz /usr/lib/x86_64-linux-gnu/libcurl.so -lmpi -pthread -Wl,-rpath -Wl,/home/romain/NEMO_UTILS/installs/lib
+make[2]: 'tst_mode' is up to date.
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test4'
+make  check-TESTS
+make[2]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test4'
+make[3]: Entering directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test4'
+PASS: tst_dims
+PASS: tst_dims2
+PASS: tst_dims3
+PASS: tst_files
+PASS: tst_files4
+PASS: tst_vars
+PASS: tst_varms
+PASS: tst_unlim_vars
+PASS: tst_converts
+PASS: tst_converts2
+PASS: tst_grps
+PASS: tst_grps2
+PASS: tst_compounds
+PASS: tst_compounds2
+PASS: tst_compounds3
+PASS: tst_opaques
+PASS: tst_strings
+PASS: tst_strings2
+PASS: tst_interops
+PASS: tst_interops4
+PASS: tst_interops5
+PASS: tst_interops6
+PASS: tst_enums
+PASS: tst_coords
+PASS: tst_coords2
+PASS: tst_coords3
+PASS: tst_vars3
+PASS: tst_vars4
+PASS: tst_chunks
+PASS: tst_chunks2
+PASS: tst_utf8
+PASS: tst_fills
+PASS: tst_fills2
+PASS: tst_fillbug
+PASS: tst_xplatform
+PASS: tst_xplatform2
+PASS: tst_endian_fill
+PASS: tst_atts
+PASS: t_type
+PASS: cdm_sea_soundings
+PASS: tst_camrun
+PASS: tst_vl
+PASS: tst_atts1
+PASS: tst_atts2
+PASS: tst_vars2
+PASS: tst_files5
+PASS: tst_files6
+PASS: tst_sync
+PASS: tst_h_scalar
+PASS: tst_rename
+PASS: tst_rename2
+PASS: tst_h5_endians
+PASS: tst_atts_string_rewrite
+PASS: tst_hdf5_file_compat
+PASS: tst_fill_attr_vanish
+PASS: tst_rehash
+PASS: tst_filterparser
+PASS: tst_bug324
+PASS: tst_types
+PASS: tst_atts3
+PASS: tst_put_vars
+PASS: tst_elatefill
+PASS: tst_udf
+PASS: tst_h_strbug
+PASS: tst_h_refs
+PASS: run_grp_rename.sh
+PASS: tst_misc.sh
+PASS: run_empty_vlen_test.sh
+PASS: tst_v2
+PASS: tst_filter.sh
+FAIL: run_par_test.sh
+============================================================================
+Testsuite summary for netCDF 4.6.2
+============================================================================
+# TOTAL: 71
+# PASS:  70
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  1
+# XPASS: 0
+# ERROR: 0
+============================================================================
+See nc_test4/test-suite.log
+Please report to support-netcdf@unidata.ucar.edu
+============================================================================
+Makefile:2021: recipe for target 'test-suite.log' failed
+make[3]: *** [test-suite.log] Error 1
+make[3]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test4'
+Makefile:2127: recipe for target 'check-TESTS' failed
+make[2]: *** [check-TESTS] Error 2
+make[2]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test4'
+Makefile:2714: recipe for target 'check-am' failed
+make[1]: *** [check-am] Error 2
+make[1]: Leaving directory '/home/romain/NEMO_UTILS/sources/NetCDF-c/netcdf-c-4.6.2/nc_test4'
+Makefile:693: recipe for target 'check-recursive' failed
+make: *** [check-recursive] Error 1
