@@ -25,4 +25,4 @@ run makenemo according to your NEMO configuration, e.g.
 
 Compared to compilation of NEMO 4.0, we need to remove the `-C` flag, otherwise
 there is an error linked to replacing C-like comments
-(see [https://nemo-ocean.discourse.group/t/fortran-preprocessing-converts-precision-to-problematic-sp/108/9](question on nemo forum))
+(see [question on nemo forum](https://nemo-ocean.discourse.group/t/fortran-preprocessing-converts-precision-to-problematic-sp/108/9))
